@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-omjh
+  namespace: build-e2e-bekv-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:815f7a6187fca1399f9b58e0168184cfa7ab833ffc00c04047437cf1d3c559e6
+        name: my-python
+        resources: {}
+status: {}
